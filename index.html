@@ -10,10 +10,60 @@
     />
     <meta name="author" content="Camilo Agudelo Tapias" />
     <title>wheater app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/app.css" />
   </head>
   <body>
+    <!--aplicacion-->
+
+    <div class="app app_grid">
+      <div class="app_columna_1">
+        <div class="container col_1">
+          <p class="quitarSlide">x</p>
+          <div class="contenedor_busqueda">
+            <form class="formulario">
+              <input
+                class="inputBusqueda"
+                type="text"
+                placeholder="Busca la ciudad"
+              />
+              <input type="submit" value="Buscar" class="buscar" />
+            </form>
+            <div class="busquedas_recientes"></div>
+          </div>
+        </div>
+
+        <div class="app_columna_2">
+          <div class="container">
+            <button class="btnSlide">Buscar por ciudad</button>
+
+            <div class="info">
+              <div class="imagen">
+                <img src="./assets/Shower.png" alt="shower" />
+              </div>
+              <div>
+                <h1 class="titulo">15°</h1>
+                <h3 class="subtitulo">Shower</h3>
+                <p>today: <span class="fecha">27 de marzo</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="app_columna_3">
+        <div class="container"></div>
+      </div>
+    </div>
+
+    <!--fin app-->
+
     <script src="js/app.js"></script>
   </body>
 </html>

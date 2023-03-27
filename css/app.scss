@@ -1,0 +1,120 @@
+/***********globales**********/
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+.container{
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/*********variables*********/
+$fondo_izquierdo: #1E213A;
+$fondo_derecho: #100E1D;
+$color_blanco: #fff;
+$color_azul: #3C47E9;
+$color_gris: #6E707A;
+
+/*******estilos de la pp********/
+.app_grid{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+
+    .app_columna_1{
+        grid-column: 1/3;
+        background-color: $fondo_izquierdo;
+        padding: 3rem 0;
+
+
+        .col_1{
+            display: none;
+        }
+
+        .formulario{
+            width: 100%;
+
+            .inputBusqueda{
+                background-color: transparent;
+                width: 100%;
+                outline: 0;
+                border: 2px solid $color_gris;
+                padding: 1rem;
+                color:$color_blanco;
+            }
+
+            .buscar{
+                width: 100%;
+                background-color: $color_azul;
+                padding: 1rem;
+                color: $color_blanco;
+                margin-top: 1rem;
+            }
+        }
+
+        .quitarSlide{
+            color: $color_blanco;
+            font-size: 3rem;
+            margin: 0;
+            padding: 0;
+            float: right;
+        }
+    }
+
+    .app_columna_2{
+        position: relative;
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5rem;
+            text-align: center;
+            color: $color_blanco;
+            
+            .titulo{
+                font-weight: bold;
+                font-size: 9rem;
+                margin: 0;
+            }
+            .subtitulo{
+                font-weight: normal;
+                font-size: 3rem;
+                color: $color_gris;
+            }
+
+            .fecha{
+                color: $color_gris;
+            }
+
+        }
+        .btnSlide{
+            border: 0;
+            background-color: $color_gris;
+            color: $color_blanco;
+            padding: 1rem 3rem;
+        }
+    }
+
+}
+
+.app_columna_3{
+    grid-column: 3/9;
+    background-color: $fondo_derecho;
+}
+.error{
+    background-color: red;
+    color: white;
+}
